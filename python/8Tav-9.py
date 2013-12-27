@@ -2,7 +2,6 @@ import string
 
 def hotel_cost(nights):
     return nights * 140
-    
 def plane_ride_cost(city):
     cityToCheck = string.lower(city)
     if cityToCheck == "charlotte":
@@ -13,7 +12,6 @@ def plane_ride_cost(city):
         return 222
     elif cityToCheck == "los angeles":
         return 475
-        
 def rental_car_cost(days):
     day_rate = 40
     three_day_discount = 20
@@ -25,14 +23,12 @@ def rental_car_cost(days):
     elif days >= 3:
         total_cost = total_cost - three_day_discount
     return total_cost
-    
 def trip_cost(city, days):
         return hotel_cost(days) + plane_ride_cost(city) + rental_car_cost(days)
 
 
 def main():
 #my code here
-    
 
 if __name__ == "__main__":
     main()

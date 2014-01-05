@@ -16,5 +16,5 @@ def main():
 	else:
 		print "You win!"
 		
-if if __name__ == "__main__":
+if __name__ == "__main__":
   main()
